@@ -1,1 +1,1 @@
-Full Stack Developer currently shipping product in EdTech. Specializing in TypeScript, Node & React.
+[travisduffy.dev](https://travisduffy.dev)
