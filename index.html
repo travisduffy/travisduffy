@@ -205,6 +205,18 @@
         object-position: top left;
         border: 2px solid var(--border);
       }
+      .projects .shot {
+        display: block;
+        margin: 0;
+        padding: 0;
+      }
+      .projects .shot:hover,
+      .projects .shot:focus-visible {
+        background: none;
+      }
+      .projects .shot:hover img {
+        border-color: var(--text);
+      }
     </style>
   </head>
 
@@ -263,13 +275,20 @@
           <div class="projects">
             <article class="card">
               <h3>map-engine</h3>
-              <img
-                src="images/map-engine.png"
-                width="1000"
-                height="640"
-                loading="lazy"
-                alt="map-engine example app: the Maritime provinces of Canada, one region per county, with a side panel."
-              />
+              <a
+                class="shot"
+                href="https://travisduffy.github.io/map-engine/"
+                target="_blank"
+                rel="noopener"
+              >
+                <img
+                  src="images/map-engine.png"
+                  width="1000"
+                  height="640"
+                  loading="lazy"
+                  alt="map-engine example app: the Maritime provinces of Canada, one region per county, with a side panel."
+                />
+              </a>
               <p>
                 A small TypeScript library that turns a PNG of flat-color
                 regions and a JSON file into an interactive map. A recolor is
@@ -299,15 +318,22 @@
 
             <article class="card">
               <h3>NS air quality dashboard</h3>
-              <img
-                src="images/ns-air-quality-dashboard.png"
-                width="1000"
-                height="625"
-                loading="lazy"
-                alt="NS Air Quality Dashboard: station tiles beside a map of Nova Scotia, each county colored by its worst reading against the limit."
-              />
+              <a
+                class="shot"
+                href="https://travisduffy.github.io/ns-air-quality-dashboard/"
+                target="_blank"
+                rel="noopener"
+              >
+                <img
+                  src="images/ns-air-quality-dashboard.png"
+                  width="1000"
+                  height="625"
+                  loading="lazy"
+                  alt="NS Air Quality Dashboard: station tiles beside a map of Nova Scotia, each county colored by its 3-year verdict against the limit."
+                />
+              </a>
               <p>
-                A React and TypeScript dashboard of ten years of hourly air
+                A React and TypeScript dashboard of sixteen years of hourly air
                 quality readings from Nova Scotia's monitoring stations. Each
                 reading is judged against its official limit, and every missing
                 hour shows as missing. The map is drawn with map-engine.
